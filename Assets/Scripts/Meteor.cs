@@ -11,6 +11,7 @@ public class Meteor : MonoBehaviour
     [SerializeField] TMPro.TextMeshProUGUI text;
     GameObject startPosition;
     GameObject explosion;
+    MeshRenderer meshRenderer;
     [SerializeField] float speed;
     bool isActive = false;
     int planetsLeft = 8;
@@ -20,6 +21,8 @@ public class Meteor : MonoBehaviour
         startPosition = new GameObject();
         startPosition.transform.position = new Vector3(0, 0, 0);
         text.SetText("Planets left: " + planetsLeft);
+        meshRenderer = GetComponent<MeshRenderer>();
+        meshRenderer.enabled = false;
     }
 
     void Update()
@@ -38,11 +41,14 @@ public class Meteor : MonoBehaviour
             transform.position = startPosition.transform.position;
             isActive = true;
             shootButton.SetActive(false);
+            meshRenderer.enabled = true;
         }
     }
 
     private void OnCollisionEnter(Collision other) 
     {
+        meshRenderer.enabled = false;
+        planetsLeft--;
         shootButton.SetActive(true);
         text.SetText("Planets left: " + planetsLeft);
         isActive = false;
@@ -50,7 +56,6 @@ public class Meteor : MonoBehaviour
         explosion = Instantiate(explosionPrefab, other.transform.position, Quaternion.identity);
         Destroy(other.gameObject, 0.05f);
         Destroy(explosion.gameObject, 1.5f);
-        planetsLeft--;
         if(planetsLeft <= 0)
         {
             Win();
@@ -59,6 +64,7 @@ public class Meteor : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) 
     {
+        meshRenderer.enabled = false;
         isActive = false;
         transform.position = new Vector3(0, 3, 0);
         if(other.tag == "Sun")

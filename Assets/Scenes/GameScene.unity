@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44402242, g: 0.49316543, b: 0.5722324, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -695,7 +695,6 @@ GameObject:
   - component: {fileID: 362484916}
   - component: {fileID: 362484915}
   - component: {fileID: 362484914}
-  - component: {fileID: 362484918}
   m_Layer: 0
   m_Name: Uranus
   m_TagString: Untagged
@@ -794,19 +793,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 362484912}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!135 &362484918
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 362484912}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.49999997
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &405244884
 GameObject:
   m_ObjectHideFlags: 0
@@ -1602,7 +1588,6 @@ GameObject:
   - component: {fileID: 895884935}
   - component: {fileID: 895884934}
   - component: {fileID: 895884933}
-  - component: {fileID: 895884937}
   m_Layer: 0
   m_Name: Jupiter
   m_TagString: Untagged
@@ -1701,19 +1686,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 895884931}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!135 &895884937
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 895884931}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1090594594
 GameObject:
   m_ObjectHideFlags: 0
@@ -1830,7 +1802,6 @@ GameObject:
   - component: {fileID: 1234404559}
   - component: {fileID: 1234404558}
   - component: {fileID: 1234404557}
-  - component: {fileID: 1234404561}
   m_Layer: 0
   m_Name: Mars
   m_TagString: Untagged
@@ -1929,19 +1900,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1234404555}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!135 &1234404561
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1234404555}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.49999997
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1257168229
 GameObject:
   m_ObjectHideFlags: 0
@@ -2591,7 +2549,7 @@ MonoBehaviour:
     type: 3}
   shootButton: {fileID: 258061471}
   text: {fileID: 441755741}
-  speed: 10
+  speed: 20
 --- !u!135 &1614186561
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2926,7 +2884,6 @@ GameObject:
   - component: {fileID: 1879010068}
   - component: {fileID: 1879010067}
   - component: {fileID: 1879010070}
-  - component: {fileID: 1879010071}
   m_Layer: 0
   m_Name: Saturn
   m_TagString: Untagged
@@ -3026,19 +2983,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vector: {x: 0, y: 45, z: 0}
---- !u!135 &1879010071
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1879010065}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1927785219
 GameObject:
   m_ObjectHideFlags: 0
@@ -3052,7 +2996,6 @@ GameObject:
   - component: {fileID: 1927785223}
   - component: {fileID: 1927785222}
   - component: {fileID: 1927785221}
-  - component: {fileID: 1927785225}
   m_Layer: 0
   m_Name: Neptune
   m_TagString: Untagged
@@ -3151,19 +3094,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1927785219}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!135 &1927785225
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1927785219}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.49999997
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1941780088
 GameObject:
   m_ObjectHideFlags: 0
@@ -3175,7 +3105,6 @@ GameObject:
   - component: {fileID: 1941780089}
   - component: {fileID: 1941780092}
   - component: {fileID: 1941780091}
-  - component: {fileID: 1941780090}
   m_Layer: 0
   m_Name: SaturnRing
   m_TagString: Untagged
@@ -3198,19 +3127,6 @@ Transform:
   m_Father: {fileID: 1879010066}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &1941780090
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1941780088}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1941780091
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3274,7 +3190,6 @@ GameObject:
   - component: {fileID: 1985113637}
   - component: {fileID: 1985113636}
   - component: {fileID: 1985113635}
-  - component: {fileID: 1985113639}
   m_Layer: 0
   m_Name: Earth
   m_TagString: Untagged
@@ -3373,19 +3288,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1985113633}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!135 &1985113639
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1985113633}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2017566766
 GameObject:
   m_ObjectHideFlags: 0
@@ -3491,7 +3393,6 @@ GameObject:
   - component: {fileID: 2102835959}
   - component: {fileID: 2102835958}
   - component: {fileID: 2102835957}
-  - component: {fileID: 2102835961}
   m_Layer: 0
   m_Name: Venus
   m_TagString: Untagged
@@ -3590,19 +3491,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2102835955}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!135 &2102835961
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2102835955}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2106006639
 GameObject:
   m_ObjectHideFlags: 0
@@ -3616,7 +3504,6 @@ GameObject:
   - component: {fileID: 2106006643}
   - component: {fileID: 2106006642}
   - component: {fileID: 2106006641}
-  - component: {fileID: 2106006645}
   m_Layer: 0
   m_Name: Mercury
   m_TagString: Untagged
@@ -3715,19 +3602,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2106006639}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!135 &2106006645
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2106006639}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2124862869
 GameObject:
   m_ObjectHideFlags: 0
