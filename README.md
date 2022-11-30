@@ -1,4 +1,4 @@
-# Solar_System_AR
+# Solar System AR
 A simple AR game created for Systems of augmented and virtual reality subject.
 
 Used technologies: Unity, Vuforia
